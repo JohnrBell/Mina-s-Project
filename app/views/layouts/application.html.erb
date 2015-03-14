@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dappapp</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <style>
+		.col-md-4 {
+			height: 400px;
+		}
+  </style>
+</head>
+<body>
+
+<!-- 	<% if current_user %>
+	  <%= current_user.email %>
+	<% end %> -->
+
+
+	<%= yield %>
+
+
+
+
+</body>
+</html>
